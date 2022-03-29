@@ -1,1 +1,40 @@
 
+Introduction of credit loss automation reporting tool 
+Note: Due to the credential agreements Purdue University student team had signed
+with their business partner, the actual automation reporting tool, the imported data,
+and the Excel VBA code will not be shared in the Github. However, the following text
+description and screenshot provide an general introduction of the functionality of
+the tool.
+
+1. Overall tool design logic: 
+Enable the end users to import 2 files, “solvas out” and “snapshot” data to Excel.
+The tool will first automatically calculate the credit loss rate of individual loans,
+based on historical accounting data (“solvas out”). Consequently, the loans will be
+grouped into several segments, based on the accounting standard and the bank
+management’s professional judgement. Lastly, the credit loss rate calculated for
+different portfolio segments will be applied to the historical data(“snapshot”) again
+to calculate and predict the credit loss of each segment in the next period.
+ 
+2. Tools screenshot:
+
+a. Excel template
+There are two buttons written with Excel VBA included in the tool. The reporters will
+be able to easily import the “solvas out” and “snapshot” data into the tools. After that,
+the calculated ECL (estimated credit loss) and the corresponding charts will be
+automatically calculated and summarized in this sheet.  
+ 
+b. Python template:
+Due to the large dataset, the risk management team also write a python version of the
+tool to speed up the running time of the tool. Similarly, the python version of
+automation tool will import data from the users’ designated file path, calculate the
+credit loss of next period, and generate the corresponding charts with the same logic.
+
+Python output (1)- Calculated credit loss:  
+Bank Branch A 
+Bank Branch B 
+Bank Branch C 
+Python output (2)- Calculated credit loss: 
+ 
+
+ 
+ 
